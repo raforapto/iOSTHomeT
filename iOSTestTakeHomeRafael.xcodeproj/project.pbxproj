@@ -18,6 +18,7 @@
 		224A659F28EF27AE00637BC7 /* NetworkingProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A659E28EF27AE00637BC7 /* NetworkingProducts.swift */; };
 		224A65A128F2229900637BC7 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A65A028F2229900637BC7 /* ImageModel.swift */; };
 		224A65AA28F355D400637BC7 /* iOSTestTakeHomeRafaelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A65A928F355D400637BC7 /* iOSTestTakeHomeRafaelTests.swift */; };
+		224A65B228F3642B00637BC7 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A65B128F3642B00637BC7 /* ProductDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		224A65A228F3438900637BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		224A65A728F355D400637BC7 /* iOSTestTakeHomeRafaelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTestTakeHomeRafaelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		224A65A928F355D400637BC7 /* iOSTestTakeHomeRafaelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTestTakeHomeRafaelTests.swift; sourceTree = "<group>"; };
+		224A65B128F3642B00637BC7 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		224A658628EDFED500637BC7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				224A65B128F3642B00637BC7 /* ProductDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				224A657728EDE4DC00637BC7 /* iOSTestTakeHomeRafaelApp.swift in Sources */,
 				224A659628EEFA5800637BC7 /* PriceModel.swift in Sources */,
 				224A65A128F2229900637BC7 /* ImageModel.swift in Sources */,
+				224A65B228F3642B00637BC7 /* ProductDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

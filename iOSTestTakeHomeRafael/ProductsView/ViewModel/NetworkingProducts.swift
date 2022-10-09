@@ -28,7 +28,7 @@ final class DLwithCombine: ObservableObject {
         let url = "https://api.apilayer.com/fixer/latest?symbols=GBP%2CEUR%2CUSD&base=GBP"
         var request = URLRequest(url: URL(string: url)!,timeoutInterval: Double.infinity)
         request.httpMethod = "GET"
-        request.addValue("cRIFYrFyplclpnV0ZLSaXV50Hz1NlIVA", forHTTPHeaderField: "apikey")
+        request.addValue("XfAs2UOPY0a1WnxUFbkQAq9FKalXcC9y", forHTTPHeaderField: "apikey")
         
         URLSession.shared.dataTaskPublisher(for: request)
             .subscribe(on: DispatchQueue.global(qos: .background))

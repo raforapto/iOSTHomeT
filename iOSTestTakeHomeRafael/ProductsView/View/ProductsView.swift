@@ -74,72 +74,78 @@ extension ProductsView {
     private var ContentColumns: some View {
         LazyVGrid(columns: columns, spacing: 16) {
             ForEach(vm.results!.results) { product in
-                VStack(alignment: .leading){
+                NavigationLink {
+                    ProductDetailView(product: product)
+                } label: {
                     
-                    AsyncImage(url: URL(string:"https:\(product.primaryImageMap.large.url)")) { image in
-                        image
-                            .resizable()
-                            .scaledToFill()
-                            .frame(height: 200)
-                            .frame(maxWidth: .infinity)
+                    VStack(alignment: .leading){
                         
-                            .clipped()
-                    } placeholder: {
-                        ProgressView()
-                            .frame(height: 200)
-                            .frame(maxWidth: .infinity)
-                        
-                    }
-                    
-                     Text(product.designer.name)
-                         .fontWeight(.semibold)
-                         .padding(.leading)
-                    Text(product.name)
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                        .padding(.leading)
-             
-                    Divider()
-                    HStack {
-                        Spacer()
-                        if  vm.setCurr == 0 {
-                            Image(systemName: "sterlingsign.square.fill")
+                        AsyncImage(url: URL(string:"https:\(product.primaryImageMap.large.url)")) { image in
+                            image
+                                .resizable()
+                                .scaledToFill()
+                                .frame(height: 200)
+                                .frame(maxWidth: .infinity)
                             
-                        } else if vm.setCurr == 1 {
-                            Image(systemName: "eurosign.square.fill")
-                        } else {
-                            Image(systemName: "dollarsign.square.fill")
+                                .clipped()
+                        } placeholder: {
+                            ProgressView()
+                                .frame(height: 200)
+                                .frame(maxWidth: .infinity)
+                            
                         }
                         
-                        Text("\(product.price.value*vm.selectedConversion, specifier: "%.2f")")
+                         Text(product.designer.name)
+                             .fontWeight(.semibold)
+                             .padding(.leading)
+                        Text(product.name)
+                            .font(.title3)
                             .fontWeight(.semibold)
                             .padding(.leading)
-                        Spacer()
-                         
+                 
+                        Divider()
+                        HStack {
+                            Spacer()
+                            if  vm.setCurr == 0 {
+                                Image(systemName: "sterlingsign.square.fill")
+                                
+                            } else if vm.setCurr == 1 {
+                                Image(systemName: "eurosign.square.fill")
+                            } else {
+                                Image(systemName: "dollarsign.square.fill")
+                            }
+                            
+                            Text("\(product.price.value*vm.selectedConversion, specifier: "%.2f")")
+                                .fontWeight(.semibold)
+                                .padding(.leading)
+                            Spacer()
+                             
+                            
+                        }
+                        HStack {
+                            Spacer()
+                                Image(systemName: "sterlingsign.square.fill")
+                            
+                                .foregroundColor(vm.selectedConversion != 1 ? Color.secondary : .clear)
+                      
+                            
+                            
+                            Text("\(product.price.value, specifier: "%.2f")")
+                                .fontWeight(.semibold)
+                                .padding(.leading)
+                                .foregroundColor(vm.selectedConversion != 1 ? Color.secondary : .clear)
+                             
+                            Spacer()
+                            
+                        } .padding(.bottom, 5)
+                        
+                        
                         
                     }
-                    HStack {
-                        Spacer()
-                            Image(systemName: "sterlingsign.square.fill")
-                        
-                            .foregroundColor(vm.selectedConversion != 1 ? Color.secondary : .clear)
-                  
-                        
-                        
-                        Text("\(product.price.value, specifier: "%.2f")")
-                            .fontWeight(.semibold)
-                            .padding(.leading)
-                            .foregroundColor(vm.selectedConversion != 1 ? Color.secondary : .clear)
-                         
-                        Spacer()
-                        
-                    } .padding(.bottom, 5)
-                    
-                    
-                    
+                    .background(Color.red.gradient.opacity(0.6))
+                    .cornerRadius(10)
                 }
-                .background(Color.red.gradient.opacity(0.6))
-                .cornerRadius(10)
+
                 
                 
             }

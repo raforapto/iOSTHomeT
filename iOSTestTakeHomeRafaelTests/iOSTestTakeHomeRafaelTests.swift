@@ -14,6 +14,7 @@ final class iOSTestTakeHomeRafaelTests: XCTestCase {
     
     
     // Were I to do this with more time (I have already spent 3 hours on this) I would consider mocking the networking class, and checking things such as how errors are handled etc
+    // I however have just done a simple check to see if a conversion between
 
     func test_currency_conversion_loaded() throws {
         let currenciesTest = DLwithCombine().conversions
