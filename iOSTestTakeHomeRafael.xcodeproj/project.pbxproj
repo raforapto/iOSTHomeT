@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222FE44A28F3778C00CABDA6 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FE44928F3778C00CABDA6 /* Notes.swift */; };
 		224A657728EDE4DC00637BC7 /* iOSTestTakeHomeRafaelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A657628EDE4DC00637BC7 /* iOSTestTakeHomeRafaelApp.swift */; };
 		224A657B28EDE4DE00637BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224A657A28EDE4DE00637BC7 /* Assets.xcassets */; };
 		224A657E28EDE4DE00637BC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224A657D28EDE4DE00637BC7 /* Preview Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		222FE44928F3778C00CABDA6 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 		224A657328EDE4DC00637BC7 /* iOSTestTakeHomeRafael.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTestTakeHomeRafael.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		224A657628EDE4DC00637BC7 /* iOSTestTakeHomeRafaelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTestTakeHomeRafaelApp.swift; sourceTree = "<group>"; };
 		224A657A28EDE4DE00637BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		224A656A28EDE4DC00637BC7 = {
 			isa = PBXGroup;
 			children = (
+				222FE44928F3778C00CABDA6 /* Notes.swift */,
 				224A657528EDE4DC00637BC7 /* iOSTestTakeHomeRafael */,
 				224A65A828F355D400637BC7 /* iOSTestTakeHomeRafaelTests */,
 				224A657428EDE4DC00637BC7 /* Products */,
@@ -309,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				224A659A28EEFAAB00637BC7 /* ProductsView.swift in Sources */,
+				222FE44A28F3778C00CABDA6 /* Notes.swift in Sources */,
 				224A658F28EEF94E00637BC7 /* ProductsModel.swift in Sources */,
 				224A659228EEF99900637BC7 /* ProductModel.swift in Sources */,
 				224A659428EEFA2600637BC7 /* DesignerModel.swift in Sources */,
