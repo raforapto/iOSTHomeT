@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+
+
+struct PrimaryImageMap: Codable {
+    let large: PrimaryImageMapLarge
+}
+
+struct PrimaryImageMapLarge: Codable {
+    let url: String
+}

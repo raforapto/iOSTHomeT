@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct Product: Codable {
+struct Product: Codable, Identifiable {
     let name, url: String
     let price: Price
-    let images: String
+    let primaryImageMap: PrimaryImageMap
     let designer: Designer
+    let id = UUID()
   }

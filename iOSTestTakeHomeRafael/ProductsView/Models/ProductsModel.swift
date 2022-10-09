@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct Products: Codable {
+    let results: [Product]
+}

@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct Designer: Codable {
+    let name: String
+}
