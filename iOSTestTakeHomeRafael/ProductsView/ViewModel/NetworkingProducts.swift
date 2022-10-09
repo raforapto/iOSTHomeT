@@ -53,8 +53,6 @@ final class DLwithCombine: ObservableObject {
              
                 
             }
-
-        // I've explicitly subscribed on the background thread, but i'm aware dataTaskPublisher does this by default, so this is uneccessary.
     }
     
     func getProducts() {
@@ -71,7 +69,7 @@ final class DLwithCombine: ObservableObject {
                       response.statusCode >= 200 && response.statusCode < 300 else {
                     throw URLError(URLError.badServerResponse)
                 }
-                
+               
                 return data
             }
             .decode(type: Products.self, decoder: JSONDecoder())
